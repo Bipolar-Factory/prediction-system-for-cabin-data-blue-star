@@ -5,8 +5,8 @@ This project is a prediction system that processes time series data and predicts
 
 ## Project Structure
 
-- **main.py**: The main script that runs the time series prediction process.
-- **deploy_without_cool.py**: Contains utility functions for generating time series features.
+- **deploy_without_cool.py**: The main script that runs the time series prediction process.
+- **utils.py**: Contains utility functions for generating time series features.
 - **lgb_classifier_idu.joblib**: Model used to predict the Idu_Status.
 - **lgb_temp_reg.joblib**: Model used to predict the temperature.
 - **ada_classifier_fan.joblib**: Model used to predict the fan speed.
