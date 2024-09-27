@@ -42,10 +42,10 @@ def process_for_time(current_time, cabins, results_df):
     df_selected_columns = df_selected_columns[['Cabin_No', 'hour', 'dayofweek', 'quarter', 'month', 'dayofyear', 'dayofmonth', 'weekofyear']]
 
     # Load classifiers
-    xgb_classifier = joblib.load('/home/ubuntu/BLUE_STAR/lgb_classifier_idu.joblib')
-    model_temp = joblib.load('/home/ubuntu/BLUE_STAR/lgb_temp_reg.joblib')
-    ada_classifier_fan = joblib.load('/home/ubuntu/BLUE_STAR/ada_classifier_fan.joblib')
-    ada_classifier_mode = joblib.load('/home/ubuntu/BLUE_STAR/ada_classifier_mode.joblib')
+    xgb_classifier = joblib.load('lgb_classifier_idu.joblib')
+    model_temp = joblib.load('lgb_temp_reg.joblib')
+    ada_classifier_fan = joblib.load('ada_classifier_fan.joblib')
+    ada_classifier_mode = joblib.load('ada_classifier_mode.joblib')
 
     orgin = df_time_cabins.copy()
     orgin['y_pred_Idu_Status'] = xgb_classifier.predict(df_selected_columns)
