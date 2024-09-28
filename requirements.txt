@@ -1,7 +1,10 @@
-pandas
-numpy
+
+scikit-learn==1.1.3
+numpy==1.26.4
 pytz
 joblib
 xgboost
 lightgbm
-scikit-learn
+pandas
+seaborn
+matplotlib
