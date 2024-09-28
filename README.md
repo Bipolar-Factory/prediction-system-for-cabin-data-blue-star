@@ -17,6 +17,7 @@ This project is a prediction system that processes time series data and predicts
 Make sure to install the dependencies from the `requirements.txt` file:
 
 ```bash
+cd prediction-system-for-cabin-data-blue-star
 pip install -r requirements.txt
 ```
 
